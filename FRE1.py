@@ -30,5 +30,4 @@ mylist = [1,2,3,4,5,6,4,3,2,1,2,3,4,5,6,6,7,8,5,6,7,8,9,8,9,8,9,7,10,123,1,2,2,3
 #set allows me to make a list from mylist that conatins only the unique characters inside my list
 #without the repeted characters
 print(len(set(mylist)))
-<<<<<<< HEAD
 #end of file fre
