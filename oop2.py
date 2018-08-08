@@ -5,12 +5,12 @@ class Sphere():
         self.radius = radius
     
     def surface_area(self):
-        return 4 * Sphere.pi * self.radius * self.radius
+        return 4 * Sphere.pi * self.radius**2
     
     def volume(self):
-        return (4 / 3) * Sphere.pi * self.radius * self.radius * self.radius
+        return (4 / 3) * Sphere.pi * self.radius**3
 
-s = Sphere(1)
+s = Sphere(5)
 print(s.surface_area())
 print(s.volume())
 
@@ -18,7 +18,7 @@ from random import randint
 class GuessingGame():
     
     def __init__(self):
-        rc = randint(0,10)
+        rc = randint(0,100)
         self.rand_choice = rc
     def reset_random(self,rand_choice):
         self.rand_choice = randint(0,10)
